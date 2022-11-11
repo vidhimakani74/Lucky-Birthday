@@ -3,21 +3,11 @@ var luckyNumber = document.querySelector("#lucky-number");
 var checkNumberButton = document.querySelector("#check-button");
 var outputBox = document.querySelector("#check-number");
 
-function checkLuckyBirthday() {
-  var dob = birthDate.value;
-  var sum = calculateSum(dob);
-  if (sum && luckyNumber) {
-    compareValues(sum, luckyNumber.value);
-  } else {
-    outputBox.innerText = "Please fillup both fields📢";
-  }
-}
-
 function calculateSum(dob) {
   dob = dob.replaceAll("-","");
   let sum = 0;
-  for (i in dob) {
-    sum = sum + Number(dob.chatAt[i]);
+  for (let i=0; i<dob.length; i++) {
+    sum = sum + Number(dob.charAt(i));
   }
   return sum;
 }
@@ -30,4 +20,13 @@ function compareValues(sum, luckyNumber) {
   }
 }
 
-checkNumberButton.addEventListener("check", checkLuckyBirthday);
+function checkLuckyBirthday() {
+  var dob = birthDate.value;
+  var sum = calculateSum(dob);
+  if (sum && luckyNumber) {
+    compareValues(sum, luckyNumber.value);
+  } else {
+    outputBox.innerText = "Please fillup both fields📢";
+  }
+}
+checkNumberButton.addEventListener("click", checkLuckyBirthday);
