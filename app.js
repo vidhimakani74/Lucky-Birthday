@@ -4,9 +4,9 @@ var checkNumberButton = document.querySelector("#check-button");
 var outputBox = document.querySelector("#check-number");
 
 function calculateSum(dob) {
-  dob = dob.replaceAll("-","");
+  dob = dob.replaceAll("-", "");
   let sum = 0;
-  for (let i=0; i<dob.length; i++) {
+  for (let i = 0; i < dob.length; i++) {
     sum = sum + Number(dob.charAt(i));
   }
   return sum;
@@ -14,9 +14,9 @@ function calculateSum(dob) {
 
 function compareValues(sum, luckyNumber) {
   if (sum % luckyNumber === 0) {
-    outputBox.innerText = "yehh.. Your Birthaday is LUCKY!🥳";
+    outputBox.innerText = "Your Birthaday is LUCKY!🥳";
   } else {
-    outputBox.innerText = "Sorry, Try another Lucky Number 😢";
+    outputBox.innerText = "Try another Lucky Number 😢";
   }
 }
 

@@ -1,61 +1,53 @@
-
-body{
-    background-color: #fffbeb;
-    text-align: center;
-    color:black;
-    font-size: large;
-    
-}
-h1{
-    color: #fbbf24;
-    text-align: center;
-    margin:auto;
-    margin-bottom: 2%;
-}
-.container{
-    width: 80%;
-    height: 50%;
-    margin:auto; 
-}
-input,label
-{
-   display: block;
-   margin: auto;
-
-   
-}
-input{
-    margin-bottom: 0.5rem;
-    text-align: center;
+body {
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-size: large;
 }
 
-#check-button{
-    display: block;
-    margin-top:0.5rem;
-    margin-bottom:1rem;
-    margin:auto;
-    background:#fbbf24;
-    border: 2px solid #fbbf24;
-    border-radius: 0.5rem;
-    text-decoration: black;
-    font-size: medium;
+h1 {
+  color: #fbbf24;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2%;
 }
 
-#date-of-birth{
-    align-self: center;
-    border: solid black 2px;
-    display: block;
-    
+.container {
+  background-color: #fffbeb;
+  width: 60%;
+  height: 100%;
+  margin: auto;
 }
 
-#lucky-number{
-    align-self: center;
-    border: solid black 2px;
+input,
+label {
+  display: block;
+  margin: auto;
 }
-.column1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    /* background-color: #fce7f3; */
+
+input {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#check-button {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin: auto;
+  background: #fbbf24;
+  border: 2px solid #fbbf24;
+  border-radius: 0.5rem;
+  text-decoration: black;
+  font-size: medium;
+}
+
+#date-of-birth {
+  align-self: center;
+  border: solid black 1.5px;
+  display: block;
+}
+
+#lucky-number {
+  align-self: center;
+  border: solid black 1.5px;
 }
