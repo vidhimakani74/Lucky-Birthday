@@ -13,10 +13,15 @@ function calculateSum(dob) {
 }
 
 function compareValues(sum, luckyNumber) {
+  if(luckyNumber>0){
   if (sum % luckyNumber === 0) {
     outputBox.innerText = "Your Birthaday is LUCKY!🥳";
   } else {
     outputBox.innerText = "Try another Lucky Number 😢";
+  }
+  }
+   else{
+    outputBox.innerText="Please enter only positive number!📢";
   }
 }
 
